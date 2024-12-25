@@ -54,7 +54,7 @@ class MovingAverageApp(QWidget):
 
         self.figure.clear()
         ax = self.figure.add_subplot(111)
-        ax.plot(result, linestyle='-', color='pink', label="Moving Average")
+        ax.plot(result, marker='o', linestyle='-', color='pink', label="Moving Average")
         ax.set_title(f"Moving Average of {ticker}")
         ax.set_xlabel("Periods")
         ax.set_ylabel("Moving Average")
