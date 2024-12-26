@@ -34,9 +34,11 @@ class MovingAverageApp(QWidget):
         layout.addWidget(self.canvas)
         self.setLayout(layout)
 
+    # plot the moving average
     def plot_moving_average(self):
         
         ticker = self.ticker_input.text()
+        # error handling
         try:
             days_in_period = int(self.days_input.text())
             num_periods = int(self.periods_input.text())
